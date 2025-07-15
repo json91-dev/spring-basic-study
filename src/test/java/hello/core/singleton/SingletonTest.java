@@ -33,7 +33,7 @@ public class SingletonTest {
         System.out.println("singletonService1: " + singletonService1);
         System.out.println("singletonService2: " + singletonService2);
 
-        Assertions.assertThat(singletonService1).isNotSameAs(singletonService2);
+        Assertions.assertThat(singletonService1).isSameAs(singletonService2);
 
     }
 
